@@ -44,5 +44,9 @@ def enviar():
     
     return render_template('exito.html', nombre_cliente=nombre)
 
+@app.route('/quienes-somos')
+def quienes_somos():
+    return render_template('quienes_somos.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
